@@ -11,7 +11,18 @@ const DataContextProvider = ({ children }) => {
   const [bookmarks, ___] = useState(bookmark);
   const [moviesCategory, ____] = useState(movies);
 
-  return <dataContext.Provider value={{}}>{children}</dataContext.Provider>;
+  return (
+    <dataContext.Provider
+      value={{
+        allMovies,
+        seriesCategory,
+        bookmarks,
+        moviesCategory,
+      }}
+    >
+      {children}
+    </dataContext.Provider>
+  );
 };
 
 export default DataContextProvider;
