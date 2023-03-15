@@ -1,11 +1,26 @@
 import IconBookmarkEmpty from "../icons/icon-bookmark-empty";
+import CustomImage from "../image";
 import IconBookmarkFull from "./icons/icon-bookmark-full";
 
 const TrendingMovie = ({ movie }) => {
-  const { isBookmarked } = movie;
+  const {
+    isBookmarked,
+    title,
+    year,
+    category,
+    thumbnail: { trending },
+  } = movie;
+
+  const ThumbNail = <CustomImage path={trending} type="trending" />;
   return (
     <div className="trending-movie-container">
-      <div className="movie-details"></div>
+      <div className="movie-details">
+        <ul>
+          <li>{year}</li>
+          <li></li>
+        </ul>
+        <h1 className="movie-title">{title}</h1>
+      </div>
       <button className={`bookmark-btn bookmarked`}>
         {isBookmarked ? <IconBookmarkFull /> : <IconBookmarkEmpty />}
       </button>

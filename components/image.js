@@ -1,9 +1,23 @@
-import Image from "next/image";
+const CustomImage = ({ path, type }) => {
+  let mediumImagePath;
+  const { small, large, medium } = path;
+  const largeImagePath = require(large).default;
+  const smallImagePath = require(small).default;
 
-const CustomImage = ({ path }) => {
-  const imagePath = require(path).default;
+  mediumImagePath = medium ? require(medium).default : null;
 
-  return <Image src={imagePath} alt="Something would go in here" />;
+  return type == "trending" ? (
+    <img
+      src={smallImagePath}
+      srcSet={`${largeImagePath} 760w,${largeImagePath} 1440w`}
+      alt="Something would go in here"
+    />
+  ) : (
+    <img
+      src={smallImagePath}
+      srcSet={`${smallImagePath}365w, ${mediumImagePath}760w, ${largeImagePath} 1440w`}
+    />
+  );
 };
 
 export default CustomImage;
