@@ -5,9 +5,10 @@ const stripAndPopulateData = () => {
   const allMovies = [...data];
   const series = [];
   const movies = [];
+  const trending = [];
 
   for (let movie of allMovies) {
-    const { category, isBookmarked } = movie;
+    const { category, isBookmarked, isTrending } = movie;
     if (category === "TV Series") {
       series.push(movie);
     } else if (category === "Movie") {
@@ -17,6 +18,10 @@ const stripAndPopulateData = () => {
     if (isBookmarked) {
       bookmark.push(movie);
     }
+
+    if (isTrending) {
+      trending.push(movie);
+    }
   }
 
   return {
@@ -24,6 +29,7 @@ const stripAndPopulateData = () => {
     allMovies,
     movies,
     series,
+    trending,
   };
 };
 
