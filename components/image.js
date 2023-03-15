@@ -1,4 +1,4 @@
-const CustomImage = ({ path, type }) => {
+const CustomImage = ({ path }) => {
   let mediumImagePath;
   const { small, large, medium } = path;
   const largeImagePath = require(large).default;
@@ -6,13 +6,7 @@ const CustomImage = ({ path, type }) => {
 
   mediumImagePath = medium ? require(medium).default : null;
 
-  return type == "trending" ? (
-    <img
-      src={smallImagePath}
-      srcSet={`${largeImagePath} 760w,${largeImagePath} 1440w`}
-      alt="Something would go in here"
-    />
-  ) : (
+  return (
     <img
       src={smallImagePath}
       srcSet={`${smallImagePath}365w, ${mediumImagePath}760w, ${largeImagePath} 1440w`}

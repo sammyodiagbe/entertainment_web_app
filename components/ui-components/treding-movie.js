@@ -11,9 +11,10 @@ const TrendingMovie = ({ movie }) => {
     thumbnail: { trending },
   } = movie;
 
-  const ThumbNail = <CustomImage path={trending} type="trending" />;
+  const ThumbNail = <CustomImage path={trending} />;
   return (
     <div className="trending-movie-container">
+      {ThumbNail}
       <div className="movie-details">
         <ul>
           <li>{year}</li>

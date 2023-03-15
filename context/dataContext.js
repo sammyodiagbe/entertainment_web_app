@@ -14,7 +14,7 @@ const DataContextProvider = ({ children }) => {
   } = data;
   const [allMovies, _] = useState(fullMovieList);
   const [seriesCategory, __] = useState(series);
-  const [bookmarks, ___] = useState(bookmark);
+  const [bookmarks, setBookmarks] = useState(bookmark);
   const [moviesCategory, ____] = useState(movies);
   const [trending, _____] = useState(t);
 
