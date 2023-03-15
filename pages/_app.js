@@ -10,7 +10,9 @@ function MyApp({ Component, pageProps }) {
   const check = stripAndPopulateData();
   return (
     <DataContextProvider>
-      <Component {...pageProps} />
+      <div className="container">
+        <Component {...pageProps} />
+      </div>
     </DataContextProvider>
   );
 }
