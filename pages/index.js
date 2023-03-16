@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+// import Image from "next/image";
+// import styles from "../styles/Home.module.css";
 import Navigation from "../components/navigation";
 import Search from "../components/search-container";
+import TrendingList from "../components/ui-components/trendingList";
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
       </Head>
       <Navigation />
       <Search />
-      <main className="main-content"></main>
+
+      <main className="main-content">
+        <TrendingList />
+      </main>
     </div>
   );
 }

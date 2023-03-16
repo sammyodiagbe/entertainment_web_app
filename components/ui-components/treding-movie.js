@@ -1,8 +1,9 @@
 import IconBookmarkEmpty from "../icons/icon-bookmark-empty";
 import CustomImage from "../image";
-import IconBookmarkFull from "./icons/icon-bookmark-full";
+import IconBookmarkFull from "../icons/icon-bookmark-full";
 
 const TrendingMovie = ({ movie }) => {
+  console.log(movie);
   const {
     isBookmarked,
     title,
@@ -18,7 +19,7 @@ const TrendingMovie = ({ movie }) => {
       <div className="movie-details">
         <ul>
           <li>{year}</li>
-          <li></li>
+          <li>{category}</li>
         </ul>
         <h1 className="movie-title">{title}</h1>
       </div>
