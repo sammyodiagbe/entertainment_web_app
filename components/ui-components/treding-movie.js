@@ -3,16 +3,15 @@ import CustomImage from "../image";
 import IconBookmarkFull from "../icons/icon-bookmark-full";
 
 const Movie = ({ movie }) => {
-  console.log(movie);
   const {
     isBookmarked,
     title,
     year,
     category,
-    thumbnail: { trending },
+    thumbnail: { regular },
   } = movie;
-
-  const ThumbNail = <CustomImage path={trending} />;
+  const { large: path } = regular;
+  const ThumbNail = <CustomImage path={path} />;
   return (
     <div className="trending-movie-container">
       {ThumbNail}

@@ -2,7 +2,7 @@ import Nav from "../components/navigation";
 import MovieList from "../components/ui-components/movie-list";
 
 const Series = () => {
-  const { series: data } = useContext(dataContext);
+  const { seriesCategory: data } = useContext(dataContext);
   return (
     <>
       <Nav />

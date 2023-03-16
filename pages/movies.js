@@ -4,7 +4,8 @@ import MovieList from "../components/ui-components/movie-list";
 import { dataContext } from "../context/dataContext";
 
 const Movies = () => {
-  const { movies: data } = useContext(dataContext);
+  const { allMovies: data } = useContext(dataContext);
+  console.log(data);
   return (
     <>
       <Nav />

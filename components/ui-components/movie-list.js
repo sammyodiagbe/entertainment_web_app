@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { dataContext } from "../../context/dataContext";
 import Movie from "./treding-movie";
 
 const MovieList = ({ data }) => {
+  console.log(data);
   const moviesStructure = data.map((movie, index) => {
     return <Movie movie={movie} />;
   });

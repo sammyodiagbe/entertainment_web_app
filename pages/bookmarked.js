@@ -4,8 +4,8 @@ import MovieList from "../components/ui-components/movie-list";
 import { dataContext } from "../context/dataContext";
 
 const Bookmarked = () => {
-  const { series: data } = useContext(dataContext);
-
+  const { bookmarks: data } = useContext(dataContext);
+  console.log(data);
   return (
     <>
       <Nav />
