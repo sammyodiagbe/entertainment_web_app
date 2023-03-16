@@ -16,8 +16,39 @@ body {
 }
 
 body svg {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+}
+
+body div.container h1.title {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+body div.container div.search-container {
+  padding: 1em;
+}
+
+body div.container div.search-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.container div.search-container form input {
+  background: transparent;
+  padding: 1em 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body div.container div.search-container form svg {
+  margin-right: 16px;
 }
 
 body div.container nav.navigation {
@@ -40,7 +71,7 @@ body div.container nav.navigation logo {
 }
 
 body div.container nav.navigation nav.sub-nav a {
-  padding: 0.4em;
+  padding: 0.1em;
 }
 
 body div.container main.main-content {
@@ -49,6 +80,7 @@ body div.container main.main-content {
 
 body div.container main.main-content section.trending-list {
   overflow-x: hidden;
+  padding: 2.5em 0;
 }
 
 body div.container main.main-content section.trending-list h1.title {
