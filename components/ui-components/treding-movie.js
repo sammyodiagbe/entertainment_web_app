@@ -2,7 +2,7 @@ import IconBookmarkEmpty from "../icons/icon-bookmark-empty";
 import CustomImage from "../image";
 import IconBookmarkFull from "../icons/icon-bookmark-full";
 
-const TrendingMovie = ({ movie }) => {
+const Movie = ({ movie }) => {
   console.log(movie);
   const {
     isBookmarked,
@@ -30,4 +30,4 @@ const TrendingMovie = ({ movie }) => {
   );
 };
 
-export default TrendingMovie;
+export default Movie;

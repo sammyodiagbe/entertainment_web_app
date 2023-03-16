@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from "../../context/dataContext";
-import TrendingMovie from "./treding-movie";
+import Moviez from "./treding-movie";
 
 const TrendingList = () => {
   const { trending } = useContext(dataContext);
@@ -8,7 +8,12 @@ const TrendingList = () => {
   const trendingStructure = trending.map((movie, index) => (
     <TrendingMovie key={index} movie={movie} />
   ));
-  return <section className="trending-list">{trendingStructure}</section>;
+  return (
+    <section className="trending-list">
+      <h1 className="title">Trending</h1>
+      <div className="trending">{trendingStructure}</div>
+    </section>
+  );
 };
 
 export default TrendingList;
