@@ -1,20 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap");
 * {
   padding: 0;
   margin: 0;
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
   font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  background: #10141e;
+  color: #ffffff;
 }
 
 body svg {
   width: 25px;
+  height: 25px;
 }
 
-body img {
+body div.container nav.navigation {
+  background: #16102f;
+  padding: 1.4em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body div.container nav.navigation svg,
+body div.container nav.navigation logo {
+  width: 35px;
+}
+
+body div.container nav.navigation nav.sub-nav a {
+  padding: 0.4em;
+}
+
+body div.container main.main-content {
+  padding: 1em;
+}
+
+body div.container main.main-content section.trending-list {
+  overflow-x: hidden;
+}
+
+body div.container main.main-content section.trending-list h1.title {
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+body div.container main.main-content section.trending-list div.trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+body div.container main.main-content section.trending-list div.trending::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container {
+  width: 240px;
+  margin-right: 16px;
+  position: relative;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container div.image-container img {
+  width: 240px;
+  height: 140px;
+  border-radius: 10px;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container div.movie-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1em;
+  padding-bottom: 1.5em;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container div.movie-details div ul li {
+  display: inline;
+  font-weight: 200;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container button.bookmark-btn {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 40px;
+  background: #5a698f;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container button.bookmark-btn svg {
+  width: 12px;
+}
+
+body div.container main.main-content div.recommend-for-you div.movie-list-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+body div.container main.main-content div.recommend-for-you div.movie-list-container div.movie-container img {
   max-width: 100%;
+  height: 110px;
+  border-radius: 16px;
 }
 /*# sourceMappingURL=index.css.map */

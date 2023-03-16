@@ -4,8 +4,12 @@ import Head from "next/head";
 import Navigation from "../components/navigation";
 import Search from "../components/search-container";
 import TrendingList from "../components/ui-components/trendingList";
+import MovieList from "../components/ui-components/movie-list";
+import { useContext } from "react";
+import { dataContext } from "../context/dataContext";
 
 export default function Home() {
+  const { allMovies: data } = useContext(dataContext);
   return (
     <>
       <Head>
@@ -18,6 +22,11 @@ export default function Home() {
 
       <main className="main-content">
         <TrendingList />
+        <div className="recommend-for-you">
+          <h1 className="title">Recommended for you</h1>
+
+          <MovieList data={data} />
+        </div>
       </main>
     </>
   );

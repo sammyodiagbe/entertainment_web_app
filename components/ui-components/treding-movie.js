@@ -13,14 +13,16 @@ const Movie = ({ movie }) => {
   const { large: path } = regular;
   const ThumbNail = <CustomImage path={path} />;
   return (
-    <div className="trending-movie-container">
-      {ThumbNail}
+    <div className="movie-container">
+      <div className="image-container">{ThumbNail}</div>
       <div className="movie-details">
-        <ul>
-          <li>{year}</li>
-          <li>{category}</li>
-        </ul>
-        <h1 className="movie-title">{title}</h1>
+        <div>
+          <ul>
+            <li>{year}</li>
+            <li>{category}</li>
+          </ul>
+          <h4 className="movie-title">{title}</h4>
+        </div>
       </div>
       <button className={`bookmark-btn bookmarked`}>
         {isBookmarked ? <IconBookmarkFull /> : <IconBookmarkEmpty />}

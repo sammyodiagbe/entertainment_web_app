@@ -1,23 +1,123 @@
 @import "./variables";
 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   border: none;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
   font-size: 16px;
-
+  font-family: "Outfit", sans-serif;
+  background: $dark_blue;
+  color: $white;
   svg {
     width: 25px;
-  }
-
-  img {
-    max-width: 100%;
+    height: 25px;
   }
 
   div.container {
+    nav.navigation {
+      background: $semi-dark-blue;
+      padding: 1.4em $padding;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      svg,
+      logo {
+        width: 35px;
+      }
+      nav.sub-nav {
+        a {
+          padding: 0.4em;
+        }
+      }
+    }
+
+    main.main-content {
+      padding: $padding;
+
+      section.trending-list {
+        overflow-x: hidden;
+        h1.title {
+          margin-bottom: 16px;
+          font-weight: 300;
+        }
+
+        div.trending {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          overflow-y: hidden;
+
+          &::-webkit-scrollbar {
+            visibility: hidden;
+          }
+          div.movie-container {
+            width: 240px;
+            margin-right: $space-between-trendin-images-mobile;
+            position: relative;
+            div.image-container {
+              img {
+                width: 240px;
+                height: 140px;
+                border-radius: $border-radius;
+              }
+            }
+
+            div.movie-details {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              display: flex;
+              align-items: flex-end;
+              padding: $padding;
+              padding-bottom: 1.5em;
+              div {
+                ul {
+                  li {
+                    display: inline;
+                    font-weight: 200;
+                  }
+                }
+              }
+            }
+
+            button.bookmark-btn {
+              height: 30px;
+              width: 30px;
+              position: absolute;
+              right: 10px;
+              top: 10px;
+              border-radius: 40px;
+              background: $greyish_blue;
+              svg {
+                width: 12px;
+              }
+            }
+          }
+        }
+      }
+      div.recommend-for-you {
+        div.movie-list-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          div.movie-container {
+            img {
+              max-width: 100%;
+              height: 110px;
+              border-radius: $space-between-trendin-images-mobile;
+            }
+          }
+        }
+      }
+    }
   }
 }
