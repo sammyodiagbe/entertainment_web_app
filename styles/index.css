@@ -184,9 +184,10 @@ body div.container main.main-content div.recommend-for-you div.movie-list-contai
 
 body div.container main.main-content div.recommend-for-you div.movie-list-container div.movie-container div.movie-details div ul li {
   padding-right: 5px;
-  display: inline;
   font-weight: 300;
   font-size: 0.8em;
+  list-style: circle;
+  display: inline;
 }
 
 body div.container main.main-content div.recommend-for-you div.movie-list-container div.movie-container button.bookmark-btn {

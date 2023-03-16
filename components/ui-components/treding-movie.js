@@ -8,6 +8,7 @@ const Movie = ({ movie }) => {
     title,
     year,
     category,
+    rating,
     thumbnail: { regular },
   } = movie;
   const { large: path } = regular;
@@ -19,9 +20,10 @@ const Movie = ({ movie }) => {
         <div>
           <ul>
             <li>{year}</li>
-            <li>{category}</li>
+            <li>&bull; {category}</li>
+            <li>&bull; {rating}</li>
           </ul>
-          <h5 className="movie-title">{title}</h5>
+          <h4 className="movie-title">{title}</h4>
         </div>
       </div>
       <button className={`bookmark-btn bookmarked`}>

@@ -24,12 +24,13 @@
           margin-bottom: 8px;
           li {
             padding-right: 5px;
-            display: inline;
             font-weight: 300;
             font-size: 0.8em;
-            &:nth-child(1) {
-              // list-style: none;
-            }
+            list-style: circle;
+            display: inline;
+            // &:nth-child(1) {
+            //   list-style: none;
+            // }
           }
         }
       }
