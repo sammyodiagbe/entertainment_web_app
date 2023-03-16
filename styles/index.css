@@ -45,6 +45,13 @@ body div.container div.search-container form input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font-size: 1em;
+}
+
+body div.container div.search-container form input:active {
+  border: 1px solid transparent;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
 }
 
 body div.container div.search-container form svg {
@@ -80,7 +87,7 @@ body div.container main.main-content {
 
 body div.container main.main-content section.trending-list {
   overflow-x: hidden;
-  padding: 2.5em 0;
+  padding: 1.4em 0;
 }
 
 body div.container main.main-content section.trending-list h1.title {

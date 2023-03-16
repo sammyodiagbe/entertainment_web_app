@@ -21,7 +21,7 @@ const Movie = ({ movie }) => {
             <li>{year}</li>
             <li>{category}</li>
           </ul>
-          <h4 className="movie-title">{title}</h4>
+          <h5 className="movie-title">{title}</h5>
         </div>
       </div>
       <button className={`bookmark-btn bookmarked`}>
