@@ -10,8 +10,8 @@ const Bookmarked = () => {
   return (
     <>
       <Nav />
-      <Search />
       <main className="main-content">
+        <Search />
         <h1 className="title">Bookmarked Movies</h1>
         <div className="grid-container">
           <MovieList data={data} />
