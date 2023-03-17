@@ -1,7 +1,7 @@
 import { useState } from "react";
 import IconSearch from "./icons/icon-search";
 
-const Search = () => {
+const Search = ({ title }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
@@ -10,7 +10,7 @@ const Search = () => {
         <IconSearch />
         <input
           type="text"
-          placeholder="Search for movies or TV series"
+          placeholder={title}
           value={searchQuery}
           onChange={(event) => setSearchQuery(event.target.value)}
         />

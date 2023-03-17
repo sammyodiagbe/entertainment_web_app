@@ -9,7 +9,7 @@ const Series = () => {
     <>
       <Nav />
       <main className="main-content">
-        <Search />
+        <Search title={"Search for TV Series"} />
         <h1 className="title">Series</h1>
 
         <div className="grid-container">

@@ -11,7 +11,7 @@ const Bookmarked = () => {
     <>
       <Nav />
       <main className="main-content">
-        <Search />
+        <Search title="Search your bookmarked show" />
         <h1 className="title">Bookmarked Movies</h1>
         <div className="grid-container">
           <MovieList data={data} />

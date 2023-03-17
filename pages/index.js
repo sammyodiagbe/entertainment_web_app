@@ -20,7 +20,7 @@ export default function Home() {
       <Navigation />
 
       <main className="main-content">
-        <Search />
+        <Search title={"Search for movies or TV series"} />
         <TrendingList />
         <div className="grid-container">
           <h1 className="title">Recommended for you</h1>

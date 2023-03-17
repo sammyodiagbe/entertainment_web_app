@@ -11,7 +11,7 @@ const Movies = () => {
     <>
       <Nav />
       <main className="main-content">
-        <Search />
+        <Search title={"Search for Movies"} />
         <h1 className="title">Movies</h1>
         <div className="grid-container">
           <MovieList data={data} />
