@@ -50,7 +50,7 @@ export default function Home() {
         <div className="grid-container">
           <h1 className="title">Recommended for you</h1>
 
-          <MovieList data={data} />
+          <MovieList data={dataPlaceholder} />
         </div>
       </main>
     </>
