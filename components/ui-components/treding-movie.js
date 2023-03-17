@@ -1,6 +1,8 @@
 import IconBookmarkEmpty from "../icons/icon-bookmark-empty";
 import CustomImage from "../image";
 import IconBookmarkFull from "../icons/icon-bookmark-full";
+import IconNavMovies from "../icons/icon-nav-movies";
+import IconNavSeries from "../icons/icon-nav-series";
 
 const Movie = ({ movie }) => {
   const {
@@ -20,7 +22,13 @@ const Movie = ({ movie }) => {
         <div>
           <ul>
             <li>{year}</li>
-            <li>&bull; {category}</li>
+            <li>
+              &bull;
+              <span className="icon">
+                {category === "Movie" ? <IconNavMovies /> : <IconNavSeries />}
+              </span>
+              {category}
+            </li>
             <li>&bull; {rating}</li>
           </ul>
           <h4 className="movie-title">{title}</h4>

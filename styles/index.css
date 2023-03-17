@@ -146,6 +146,21 @@ body div.container main.main-content section.trending-list div.trending div.movi
 body div.container main.main-content section.trending-list div.trending div.movie-container div.movie-details div ul li {
   display: inline;
   font-weight: 200;
+  padding: 0 0.1em;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container div.movie-details div ul li span.icon {
+  vertical-align: center;
+  margin: 0 8px;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container div.movie-details div ul li span.icon svg {
+  width: 15px;
+}
+
+body div.container main.main-content section.trending-list div.trending div.movie-container div.movie-details div ul li span.icon svg path,
+body div.container main.main-content section.trending-list div.trending div.movie-container div.movie-details div ul li span.icon svg g {
+  fill: #ffffff;
 }
 
 body div.container main.main-content section.trending-list div.trending div.movie-container button.bookmark-btn {
@@ -194,6 +209,20 @@ body div.container main.main-content div.grid-container div.movie-list-container
   font-size: 0.8em;
   list-style: circle;
   display: inline;
+  vertical-align: center;
+}
+
+body div.container main.main-content div.grid-container div.movie-list-container div.movie-container div.movie-details div ul li span.icon {
+  margin: 0 8px;
+}
+
+body div.container main.main-content div.grid-container div.movie-list-container div.movie-container div.movie-details div ul li span.icon svg {
+  width: 15px;
+}
+
+body div.container main.main-content div.grid-container div.movie-list-container div.movie-container div.movie-details div ul li span.icon svg path,
+body div.container main.main-content div.grid-container div.movie-list-container div.movie-container div.movie-details div ul li span.icon svg g {
+  fill: #ffffff;
 }
 
 body div.container main.main-content div.grid-container div.movie-list-container div.movie-container button.bookmark-btn {

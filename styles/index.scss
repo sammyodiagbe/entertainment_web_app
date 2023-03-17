@@ -31,6 +31,17 @@
             // &:nth-child(1) {
             //   list-style: none;
             // }
+            vertical-align: center;
+            span.icon {
+              margin: 0 8px;
+              svg {
+                width: 15px;
+                path,
+                g {
+                  fill: $white;
+                }
+              }
+            }
           }
         }
       }
@@ -173,6 +184,18 @@ body {
                   li {
                     display: inline;
                     font-weight: 200;
+                    padding: 0 0.1em;
+                    span.icon {
+                      vertical-align: center;
+                      margin: 0 8px;
+                      svg {
+                        width: 15px;
+                        path,
+                        g {
+                          fill: $white;
+                        }
+                      }
+                    }
                   }
                 }
               }
