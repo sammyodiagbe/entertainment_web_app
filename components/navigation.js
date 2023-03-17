@@ -6,23 +6,28 @@ import IconNavHome from "./icons/icon-nav-home";
 import IconNavMovies from "./icons/icon-nav-movies";
 import IconNavSeries from "./icons/icon-nav-series";
 import image from "../assets/image-avatar.png";
+import { useRouter } from "next/router";
 
 const Nav = () => {
+  const { pathname } = useRouter();
   return (
     <nav className="navigation">
       <Logo />
 
       <nav className="sub-nav">
-        <Link href={"/"}>
+        <Link href={"/"} className={pathname === "/" && "active"}>
           <IconNavHome />
         </Link>
-        <Link href={"/movies"}>
+        <Link href={"/movies"} className={pathname === "/movies" && "active"}>
           <IconNavMovies />
         </Link>
-        <Link href={"/series"}>
+        <Link href={"/series"} className={pathname === "/series" && "active"}>
           <IconNavSeries />
         </Link>
-        <Link href={"/bookmarked"}>
+        <Link
+          href={"/bookmarked"}
+          className={pathname === "/bookmarked" && "active"}
+        >
           <IconNavBookmark />
         </Link>
       </nav>

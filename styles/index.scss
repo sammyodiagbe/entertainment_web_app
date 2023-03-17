@@ -113,7 +113,9 @@ body {
       nav.sub-nav {
         a {
           padding: 0.1em;
-          &:hover {
+
+          &:hover,
+          &.active {
             svg {
               path,
               g {

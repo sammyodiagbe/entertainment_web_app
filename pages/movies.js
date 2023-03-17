@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Nav from "../components/navigation";
 import MovieList from "../components/ui-components/movie-list";
 import { dataContext } from "../context/dataContext";

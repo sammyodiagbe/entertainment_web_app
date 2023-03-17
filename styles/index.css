@@ -83,7 +83,8 @@ body div.container nav.navigation nav.sub-nav a {
 }
 
 body div.container nav.navigation nav.sub-nav a:hover svg path,
-body div.container nav.navigation nav.sub-nav a:hover svg g {
+body div.container nav.navigation nav.sub-nav a:hover svg g, body div.container nav.navigation nav.sub-nav a.active svg path,
+body div.container nav.navigation nav.sub-nav a.active svg g {
   fill: #ffffff;
 }
 
