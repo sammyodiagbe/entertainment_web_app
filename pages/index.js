@@ -22,7 +22,7 @@ export default function Home() {
 
       <main className="main-content">
         <TrendingList />
-        <div className="recommend-for-you">
+        <div className="grid-container">
           <h1 className="title">Recommended for you</h1>
 
           <MovieList data={data} />

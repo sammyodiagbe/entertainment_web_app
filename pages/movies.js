@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Nav from "../components/navigation";
 import MovieList from "../components/ui-components/movie-list";
 import { dataContext } from "../context/dataContext";
+import Search from "../components/search-container";
 
 const Movies = () => {
   const { allMovies: data } = useContext(dataContext);
@@ -9,9 +10,12 @@ const Movies = () => {
   return (
     <>
       <Nav />
+      <Search />
       <main className="main-content">
         <h1 className="title">Movies</h1>
-        <MovieList data={data} />
+        <div className="grid-container">
+          <MovieList data={data} />
+        </div>
       </main>
     </>
   );
