@@ -10,8 +10,8 @@ const Movies = () => {
   return (
     <>
       <Nav />
-      <Search />
       <main className="main-content">
+        <Search />
         <h1 className="title">Movies</h1>
         <div className="grid-container">
           <MovieList data={data} />

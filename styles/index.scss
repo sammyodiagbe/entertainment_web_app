@@ -100,8 +100,8 @@ body {
     nav.navigation {
       background: $semi-dark-blue;
       padding: 1.4em $padding;
-      display: flex;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(3, max-content);
       justify-content: space-between;
       svg,
       logo {
@@ -118,7 +118,6 @@ body {
       padding: $padding;
 
       section.trending-list {
-        overflow-x: hidden;
         padding: 1.4em 0;
         h1.title {
           margin-bottom: 16px;
@@ -232,14 +231,61 @@ body {
 
       nav.navigation {
         border-radius: $border-radius;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        max-height: 90vh;
+        position: sticky;
+        top: 20px;
+
+        nav.sub-nav {
+          align-self: self-start;
+          display: grid;
+          align-items: center;
+          a {
+            padding: 1em 0;
+          }
+        }
+
+        img {
+          display: block;
+          align-self: self-end;
+          height: 35px;
+          width: 35px;
+        }
       }
       main.main-content {
+        overflow-y: auto;
         div.grid-container {
           div.movie-list-container {
             grid-template-columns: repeat(4, 1fr);
+            div.movie-container {
+              width: 280px;
+              img {
+                width: 280px;
+                height: 174px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    div.container {
+      width: 1440px;
+      margin: 0 auto;
+      main.main-content {
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+          visibility: hidden;
+        }
+        section.trending-list {
+          div.trending {
+            overflow-x: scroll;
           }
         }
       }

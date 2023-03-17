@@ -8,8 +8,8 @@ const Series = () => {
   return (
     <>
       <Nav />
-      <Search />
       <main className="main-content">
+        <Search />
         <h1 className="title">Series</h1>
 
         <div className="grid-container">
