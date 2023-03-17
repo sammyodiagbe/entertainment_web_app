@@ -189,3 +189,60 @@ body {
     }
   }
 }
+
+@media screen and( min-width: 530px) {
+  body {
+    div.container {
+      main.main-content {
+        section.trending-list {
+          div.trending {
+            div.movie-container {
+              width: 470px;
+              div.image-container {
+                img {
+                  width: 470px;
+                  height: 230px;
+                }
+              }
+            }
+          }
+        }
+        div.grid-container {
+          div.movie-list-container {
+            grid-template-columns: repeat(3, 1fr);
+            div.movie-container {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 968px) {
+  body {
+    div.container {
+      display: grid;
+      grid-template-columns: 96px calc(100% - 96px);
+      column-gap: 36px;
+      padding: 32px;
+
+      nav.navigation {
+        border-radius: $border-radius;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      main.main-content {
+        div.grid-container {
+          div.movie-list-container {
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+      }
+    }
+  }
+}

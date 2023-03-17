@@ -18,9 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Search />
 
       <main className="main-content">
+        <Search />
         <TrendingList />
         <div className="grid-container">
           <h1 className="title">Recommended for you</h1>

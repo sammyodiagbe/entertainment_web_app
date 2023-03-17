@@ -203,4 +203,50 @@ body div.container main.main-content div.grid-container div.movie-list-container
 body div.container main.main-content div.grid-container div.movie-list-container div.movie-container button.bookmark-btn svg {
   width: 12px;
 }
+
+@media screen and (min-width: 530px) {
+  body div.container main.main-content section.trending-list div.trending div.movie-container {
+    width: 470px;
+  }
+  body div.container main.main-content section.trending-list div.trending div.movie-container div.image-container img {
+    width: 470px;
+    height: 230px;
+  }
+  body div.container main.main-content div.grid-container div.movie-list-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  body div.container main.main-content div.grid-container div.movie-list-container div.movie-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  body div.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 96px calc(100% - 96px);
+        grid-template-columns: 96px calc(100% - 96px);
+    -webkit-column-gap: 36px;
+            column-gap: 36px;
+    padding: 32px;
+  }
+  body div.container nav.navigation {
+    border-radius: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body div.container main.main-content div.grid-container div.movie-list-container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
 /*# sourceMappingURL=index.css.map */
