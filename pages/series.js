@@ -5,11 +5,18 @@ import { dataContext } from "../context/dataContext";
 import Search from "../components/search-container";
 const Series = () => {
   const { seriesCategory: data } = useContext(dataContext);
+
+  const handleUserSearch = (event) => {
+    event.preventDefault();
+  };
   return (
     <>
       <Nav />
       <main className="main-content">
-        <Search title={"Search for TV Series"} />
+        <Search
+          title={"Search for TV Series"}
+          handleUserSearch={handleUserSearch}
+        />
         <h1 className="title">Series</h1>
 
         <div className="grid-container">

@@ -47,6 +47,7 @@ body div.container div.search-container form input {
           flex: 1;
   font-size: 1em;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 
 body div.container div.search-container form input:hover, body div.container div.search-container form input:focus {

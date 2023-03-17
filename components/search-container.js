@@ -1,12 +1,12 @@
 import { useState } from "react";
 import IconSearch from "./icons/icon-search";
 
-const Search = ({ title }) => {
+const Search = ({ title, handleUserSearch }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div className="search-container">
-      <form className="form">
+      <form className="form" onSubmit={handleUserSearch}>
         <IconSearch />
         <input
           type="text"
