@@ -15,13 +15,19 @@ const Nav = () => {
       <Logo />
 
       <nav className="sub-nav">
-        <Link href={"/"} className={pathname === "/" && "active"}>
+        <Link href={"/"} className={pathname === "/" ? "active" : ""}>
           <IconNavHome />
         </Link>
-        <Link href={"/movies"} className={pathname === "/movies" && "active"}>
+        <Link
+          href={"/movies"}
+          className={pathname === "/movies" ? "active" : ""}
+        >
           <IconNavMovies />
         </Link>
-        <Link href={"/series"} className={pathname === "/series" && "active"}>
+        <Link
+          href={"/series"}
+          className={pathname === "/series" ? "active" : ""}
+        >
           <IconNavSeries />
         </Link>
         <Link
