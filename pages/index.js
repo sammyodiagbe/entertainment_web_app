@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Watch Movies or Series</title>
         <meta name="description" content="Built by Samson Odiagbe" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
