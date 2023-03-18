@@ -33,7 +33,7 @@ const Movies = () => {
         />
         {searchString.length > 0 && (
           <h1 className="title">
-            Found {dataPlaceholder.length} results for "{searchString}"
+            Found {dataPlaceholder.length} results for {searchString}
           </h1>
         )}
         <h1 className="title">Movies</h1>
